@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            PrintDigits(1234);
+            Random rng = new Random();
+            int num = rng.Next(9999);
+            Console.WriteLine(num);
+            PrintDigits(num);
         }
 
         static void PrintDigits(int num)
